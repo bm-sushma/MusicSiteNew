@@ -76,8 +76,8 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\Packages\MSTest.TestAdapter.1.2.0\build\net45\MSTest.TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\Packages\MSTest.TestAdapter.1.2.0\build\net45\MSTest.TestAdapter.props'))" />
-    <Error Condition="!Exists('..\Packages\MSTest.TestAdapter.1.2.0\build\net45\MSTest.TestAdapter.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\Packages\MSTest.TestAdapter.1.2.0\build\net45\MSTest.TestAdapter.targets'))" />
+    <Error Condition="!Exists('C:\Program Files (x86)\Microsoft Visual Studio\Shared\Packages\MSTest.TestAdapter.1.2.0\build\net45\MSTest.TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', 'C:\Program Files (x86)\Microsoft Visual Studio\Shared\Packages\MSTest.TestAdapter.1.2.0\build\net45\MSTest.TestAdapter.props'))" />
+    <Error Condition="!Exists('C:\Program Files (x86)\Microsoft Visual Studio\Shared\Packages\MSTest.TestAdapter.1.2.0\build\net45\MSTest.TestAdapter.targets')" Text="$([System.String]::Format('$(ErrorText)', 'C:\Program Files (x86)\Microsoft Visual Studio\Shared\Packages\MSTest.TestAdapter.1.2.0\build\net45\MSTest.TestAdapter.targets'))" />
   </Target>
-  <Import Project="..\Packages\MSTest.TestAdapter.1.2.0\build\net45\MSTest.TestAdapter.targets" Condition="Exists('..\Packages\MSTest.TestAdapter.1.2.0\build\net45\MSTest.TestAdapter.targets')" />
+  <Import Project="C:\Program Files (x86)\Microsoft Visual Studio\Shared\Packages\MSTest.TestAdapter.1.2.0\build\net45\MSTest.TestAdapter.targets" Condition="Exists('C:\Program Files (x86)\Microsoft Visual Studio\Shared\Packages\MSTest.TestAdapter.1.2.0\build\net45\MSTest.TestAdapter.targets')" />
 </Project>
